@@ -42,7 +42,7 @@ jobs:
       uses: github/codeql-action/analyze@v1
 
     - name: upload_artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
          name: CodeQL Analysis Sarif
          path: /home/runner/work/dd-trace-py/results/python.sarif
